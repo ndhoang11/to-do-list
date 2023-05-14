@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>To-do-list</h1>
+    <form>
+     <input type="text" id="new-task" placeholder="Add New Task">
+    <button type="submit" id="add-btn">Add</button>
+    
+    </form>
+    <ul id="Todo-list"></ul>
+
+    <script>
+        const newTaskInput = document.getElementById
+        ("new-task");
+        const addTaskButton = document.getElementById
+        ("add-btn");
+        const TodoList = document.getElementById
+        ("Todo-list");
+
+        function addTask(event){
+            event.preventDefault();
+            const taskText = newTaskInput.value;
+            if (taskText.trim() === "") {
+                return  ; 
+            }
+        }
+        const task = document.createElement("li");
+        task.innerText = taskText;
+        TodoList.appendChild(task);
+        newTaskInput.value = "";
+        addTaskButton.addEventListener("click",  addTask);
+
+    </script>
+   
+    
+</body>
+</html>

@@ -1,0 +1,26 @@
+
+input#new-task {
+    padding: 6px;
+    border-radius: 8px;
+    border: 1px solid;
+    padding-left: 24px;
+    text-align: center;
+}
+button#add-btn {
+    text-align: center;
+    background-color: green;
+    color: #fff;
+    width: 62px;
+    border-radius: 6px;
+    border: 0px;
+    padding: 6px;
+}
+button#add-btn:hover{
+    opacity: 0.8;
+}
+h1{
+    text-align: center;
+}
+form{
+    text-align: center;
+}
